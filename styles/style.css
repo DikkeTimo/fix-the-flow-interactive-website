@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* color */
+  --c-white: #fff;
+  --magenta: #b9005f;
+  --teks-zwart: #111;
+  --achtergrond: #eaeaea;
+  --huistijl: linear-gradient(123.52deg, #cf0d4e 0%, #cd0069 100%);
+  --panel-background: rgb(219, 219, 219);
+
+  --radius: 0.6rem;
+  --width: 90%;
+}
+
+[data-theme="dark"] {
+  --huistijl: #010004;
+  --achtergrond: #000000;
+  --magenta: #000000;
+  --c-white: rgb(174, 174, 174);
+}
+
+@font-face {
+  font-family: "Fira Sans Medium";
+  src: url("/fonts/FiraSans-Medium.ttf");
+}
+
+body {
+  background-color: var(--c-white);
+  font-family: "Fira Sans medium";
+}
+
+/* ---------------Navigatie--------------- */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  background: var(--huistijl);
+  border-radius: 0 1rem 1rem 0;
+  padding: 1rem;
+  height: 100%;
+  width: 18vw;
+}
+
+svg:first-child {
+  fill: var(--c-white);
+  position: relative;
+  width: 85px;
+}
+
+.innermap {
+  position: relative;
+}
+
+.innermap a {
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration-line: none;
+  transition: 0.2s ease-in;
+  width: initial;
+}
+
+.innermap p {
+  min-width: 100px;
+  padding-left: 10px;
+  width: auto;
+  padding-left: 10px;
+}
+
+.innermap i {
+  font-size: 25px;
+  color: var(--magenta);
+  position: fixed;
+  left: 3%;
+  margin-top: 5px;
+  margin-left: 0 auto;
+}
+
+.innermap a:hover {
+  transition: 0.5s ease-out;
+  background-color: var(--c-white);
+  color: var(--c-black);
+  border-radius: var(--radius);
+}
+
+/* ----------------------------------------------------- */
+
+/* ----------------------Main--------------------------- */
+.main-background {
+  background-color: var(--achtergrond);
+}
+
+.main {
+  background-color: var(--c-white);
+  border-radius: var(--radius);
+  margin: 0 auto;
+  width: 62vw;
+  padding: 2rem;
+  padding-bottom: 5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--c-white);
+  position: sticky;
+  top: 0;
+  height: 4rem;
+  z-index: 2;
+}
+
+header img {
+  width: 14rem;
+}
+
+main h1 {
+  color: #e30059;
+  font-size: 2.8rem;
+  margin-top: 2rem;
+  width: 20rem;
+}
+
+main p {
+  color: var(--c-tekst);
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+  scroll-behavior: smooth;
+}
+
+main svg {
+  width: 100%;
+  margin: 0 auto;
+}
+
+hr {
+  margin-top: 1rem;
+}
+
+.topnav {
+  background-color: #333;
+  border-radius: var(--radius);
+  position: relative;
+  display: none;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  border-radius: var(--radius);
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  border-radius: var(--radius);
+  display: block;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.to-top {
+  color: #e05627;
+  position: fixed;
+  margin: 40% 90%;
+}
+
+.to-top:hover {
+  background-color: #fff;
+  border-radius: 70%;
+}
+
+/* --------------------------------------------- */
+
+/* -------------Footer-------------------------- */
+
+footer {
+  position: relative;
+  background: var(--huistijl);
+  border-radius: var(--radius);
+  margin: 0 auto;
+  width: 62vw;
+  height: 20vh;
+}
+
+.socials {
+  position: sticky;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.socials img {
+  width: 4rem;
+}
+
+.socials p {
+  color: var(--c-white);
+}
+/* ------------------------------------------------------------ */
+/* ----------------------Mapjes uitklapbaar-------------------- */
+
+.box {
+  margin-top: 5rem;
+}
+
+.accordion {
+  background-color: var(--magenta);
+  color: var(--c-white);
+  border-style: solid;
+  border-color: var(--c-white);
+  border-radius: var(--radius);
+  width: var(--width);
+  height: 4em;
+  font-size: 1rem;
+}
+
+.accordion:after {
+  color: white;
+  content: "\002B";
+  float: right;
+  padding-right: 0.5rem;
+}
+
+.active:after {
+  color: rgb(255, 253, 253);
+  content: "\2212";
+}
+
+.accordion:hover {
+  opacity: 0.7;
+  transition-duration: 0.4s;
+}
+
+.panel {
+  font-size: 16px;
+  display: none;
+  background-color: var(--panel-background);
+  border-radius: var(--radius);
+  width: var(--width);
+  text-align: left;
+  padding: 2em;
+}
+
+.panel p {
+  font-size: 16px;
+}
+
+code {
+  background-color: #fff;
+  border-radius: 0.6rem;
+  padding: 0.2rem;
+}
+
+pre {
+  background-color: #fff;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  overflow-x: scroll;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* Darkmode switch */
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch-wrapper p {
+  margin-left: 0.5rem;
+}
+
+.theme-switch {
+  height: 2rem;
+  position: relative;
+  width: 3.75rem;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: var(--achtergrond);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* darkmode switch end */
+
+/* ------------------------ontwikkelaar page---------------------- */
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------------------------------------------------------------- */
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .topnav {
+    display: block;
+  }
+
+  .main h1 {
+    font-size: 25px;
+  }
+
+  .main img {
+    width: 8rem;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  header {
+    align-items: center;
+  }
+
+  .theme-switch-wrapper {
+    margin-left: 5%;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
