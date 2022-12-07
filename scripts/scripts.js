@@ -45,3 +45,13 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+/--------------------Toggle----------------------/;
+let contact = document.querySelector("fieldset");
+let button = document.querySelector("button");
+
+button.addEventListener("click", togglebutton);
+
+function togglebutton() {
+  contact.classList.toggle("toggle");
+}
