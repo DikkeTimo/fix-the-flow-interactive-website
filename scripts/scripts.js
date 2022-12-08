@@ -47,11 +47,13 @@ function myFunction() {
 }
 
 /--------------------Toggle----------------------/;
-let contact = document.querySelector("fieldset");
+let contactForm = document.querySelector("fieldset");
 let button = document.querySelector("button");
+let footer = document.querySelector("footer");
 
 button.addEventListener("click", togglebutton);
 
 function togglebutton() {
-  contact.classList.toggle("toggle");
+  contactForm.classList.toggle("toggle");
+  footer.classList.toggle("footertransform");
 }

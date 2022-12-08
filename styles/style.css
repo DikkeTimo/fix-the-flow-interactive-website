@@ -115,7 +115,6 @@ header {
   position: sticky;
   top: 0;
   height: 4rem;
-  z-index: 2;
 }
 
 header img {
@@ -220,12 +219,17 @@ textarea {
 
 footer {
   display: flex;
-  /* position: relative; */
   background: var(--huistijl);
   border-radius: var(--radius);
   margin: 0 auto;
   width: 62vw;
+  height: 20vh;
+}
+
+.footertransform {
   height: 85vh;
+  transition: 1s ease-in;
+  overflow-y: hidden;
 }
 
 .socials {
@@ -253,13 +257,22 @@ footer {
 }
 
 fieldset {
+  background-color: #c9b5b2;
+  display: flex;
+  flex-direction: column;
   color: var(--c-tekst);
-  margin-left: -200rem;
+  margin-top: -150rem;
   min-width: 22rem;
 }
 
-button {
-  background-color: #cdcdcd;
+input {
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.3rem;
+}
+
+.contact-button {
+  background-color: #c9b5b2;
   border-radius: 0.3rem;
   border: none;
   padding: 0.5rem;
@@ -267,7 +280,7 @@ button {
   width: 6rem;
 }
 
-button:hover {
+.contact-button:hover {
   background-color: #ffffff;
   transition: 0.5s;
 }
@@ -405,11 +418,6 @@ input:checked + .slider:before {
 /* darkmode switch end */
 
 /* ------------------------ontwikkelaar page---------------------- */
-
-fieldset {
-  display: flex;
-  flex-direction: column;
-}
 
 /* --------------------------------------------------------------- */
 
