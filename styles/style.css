@@ -265,7 +265,8 @@ fieldset {
   min-width: 22rem;
 }
 
-input {
+input,
+textarea {
   border: none;
   border-radius: 0.2rem;
   padding: 0.3rem;
