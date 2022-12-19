@@ -211,8 +211,44 @@ label {
 
 textarea {
   height: 15rem;
+  max-width: 100%;
+  min-width: 50%;
 }
 
+#focus-image {
+  background-color: var(--c-white);
+  border-radius: var(--radius);
+}
+
+#focus-select {
+  background-color: var(--c-white);
+  border-radius: var(--radius);
+}
+
+#focus-form {
+  background-color: var(--c-white);
+  border-radius: var(--radius);
+}
+
+#focus-media {
+  background-color: var(--c-white);
+  border-radius: var(--radius);
+}
+
+#focus-navi {
+  background-color: var(--c-white);
+  border-radius: var(--radius);
+}
+
+#focus-design {
+  background-color: var(--c-white);
+  border-radius: var(--radius);
+}
+
+#focus-text {
+  background-color: var(--c-white);
+  border-radius: var(--radius);
+}
 /* --------------------------------------------- */
 
 /* -------------Footer-------------------------- */
@@ -273,7 +309,7 @@ textarea {
 }
 
 .contact-button {
-  background-color: #c9b5b2;
+  background-color: #ffd05f;
   border-radius: 0.3rem;
   border: none;
   padding: 0.5rem;
@@ -355,6 +391,41 @@ pre {
   overflow-x: scroll;
 }
 
+/* form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(54vw) translateY(6%);
+  gap: 51px;
+}
+
+input {
+  transform: scale(4);
+}
+
+.ready {
+  font-size: 1.5em;
+}
+.ui-progressbar-value {
+  background: lightgreen;
+}
+.progressbar-container {
+  position: relative;
+  width: 350px;
+}
+
+.progressbar-bar {
+  height: 25px;
+  margin: 10px 0;
+  border-radius: 7px;
+}
+
+.progressbar-label {
+  position: absolute;
+  top: 2px;
+  left: 45%;
+  z-index: 2;
+} */
 /* ------------------------------------------------------------------ */
 
 /* Darkmode switch */
