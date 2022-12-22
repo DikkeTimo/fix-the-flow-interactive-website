@@ -1,0 +1,49 @@
+.checkbox {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+  margin-left: 55%;
+  gap: 8.5px;
+  scale: 3;
+}
+
+.checkboxtwo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 11%;
+  margin-left: 55%;
+  gap: 8.5px;
+  scale: 3;
+}
+
+.checkboxthree {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+  margin-left: 55%;
+  gap: 8.5px;
+  scale: 3;
+}
+
+.checkboxfour {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 14%;
+  margin-left: 55%;
+  gap: 8.5px;
+  scale: 3;
+}
+
+.checkboxfive {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 11%;
+  margin-left: 55%;
+  gap: 8.5px;
+  scale: 3;
+}
