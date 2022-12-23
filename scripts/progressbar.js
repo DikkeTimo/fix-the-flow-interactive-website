@@ -14,3 +14,9 @@ if (allCheckboxes) {
     });
   });
 }
+
+// let value = document.querySelector("progress")
+
+// if ("value" = 100) {
+//   ;
+// }
