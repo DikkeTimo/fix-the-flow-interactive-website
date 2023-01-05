@@ -38,6 +38,9 @@ De website is opgemaakt uit HTML, CSS en JS.
 
 ## Licentie
 
+https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
 This work is licensed under [GNU GPLv3](./LICENSE).
